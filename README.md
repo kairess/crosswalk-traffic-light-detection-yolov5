@@ -16,10 +16,10 @@ Output video would be stored at `data` directory.
 
 Used `yolov5s6.pt` pretrained model from original yolov5 repository.
 
-- Best model: [runs\train\exp4\weights\best.pt](runs\train\exp4\weights\best.pt)
-- Last model: [runs\train\exp4\weights\last.pt](runs\train\exp4\weights\last.pt)
+- Best model: [runs/train/exp4/weights/best.pt](runs/train/exp4/weights/best.pt)
+- Last model: [runs/train/exp4/weights/last.pt](runs/train/exp4/weights/last.pt)
 
-Used hyperparameters for training: [runs\train\exp4\hyp.yaml](runs\train\exp4\hyp.yaml)
+Used hyperparameters for training: [runs/train/exp4/hyp.yaml](runs/train/exp4/hyp.yaml)
 
 Used script for training
 
@@ -40,7 +40,7 @@ Model Summary: 280 layers, 12315904 parameters, 0 gradients, 16.2 GFLOPs
 
 ## Dataset
 
-[저시력자, 시각장애인을 위한 정보 전달 서비스, Information delivery service for the visually impaired](https://open.selectstar.ai/data-set/wesee)
+[교차로 및 화폐 정보 데이터셋, Intersection and currency information datasets](https://open.selectstar.ai/data-set/wesee)
 
 ---
 
