@@ -1,3 +1,49 @@
+# Crosswalks and Traffic Lights Detection
+
+Crosswalks and traffic lights detection for people with visual impairment or blindness.
+
+![](data/result.gif)
+
+## Run
+
+```
+python test.py
+```
+
+Output video would be stored at `data` directory.
+
+## Pretrained Models
+
+Used `yolov5s6.pt` pretrained model from original yolov5 repository.
+
+- Best model: [runs\train\exp4\weights\best.pt](runs\train\exp4\weights\best.pt)
+- Last model: [runs\train\exp4\weights\last.pt](runs\train\exp4\weights\last.pt)
+
+Used hyperparameters for training: [runs\train\exp4\hyp.yaml](runs\train\exp4\hyp.yaml)
+
+Used script for training
+
+```
+python train.py --img 640 --batch 16 --epochs 50 --data crosswalk.yaml --weights yolov5s6.pt
+```
+
+## Training Summary
+
+Model Summary: 280 layers, 12315904 parameters, 0 gradients, 16.2 GFLOPs
+
+|Class|Images|Labels|Precision|Recall|mAP@.5|mAP@.5:.95|
+|---|---|---|---|---|---|---|
+|all|6593|9120|0.905|0.943|0.956|0.76|
+|Zebra_Cross|6593|6631|0.981|0.968|0.988|0.929|
+|R_Signal|6593|1843|0.86|0.934|0.941|0.675|
+|G_Signal|6593|646|0.875|0.926|0.94|0.674|
+
+## Dataset
+
+[저시력자, 시각장애인을 위한 정보 전달 서비스, Information delivery service for the visually impaired](https://open.selectstar.ai/data-set/wesee)
+
+---
+
 <div align="center">
 <p>
    <a align="left" href="https://ultralytics.com/yolov5" target="_blank">
