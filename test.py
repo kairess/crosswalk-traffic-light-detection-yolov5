@@ -24,6 +24,9 @@ colors = ((50, 50, 50), (0, 0, 255), (0, 255, 0)) # (gray, red, green)
 
 cap = cv2.VideoCapture('data/sample.mp4')
 
+fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+out = cv2.VideoWriter('data/output.mp4', fourcc, cap.get(cv2.CAP_PROP_FPS), (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))))
+
 while cap.isOpened():
     ret, img = cap.read()
     if not ret:
@@ -60,5 +63,9 @@ while cap.isOpened():
     result_img = annotator.result()
 
     cv2.imshow('result', result_img)
+    out.write(result_img)
     if cv2.waitKey(1) == ord('q'):
         break
+
+cap.release()
+out.release()
