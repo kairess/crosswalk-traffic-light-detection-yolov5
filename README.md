@@ -42,6 +42,12 @@ Model Summary: 280 layers, 12315904 parameters, 0 gradients, 16.2 GFLOPs
 
 [교차로 및 화폐 정보 데이터셋, Intersection and currency information datasets](https://open.selectstar.ai/data-set/wesee)
 
+## Preprocessing Dataset
+
+[`preprocess.ipynb`](preprocess.ipynb)
+
+## Special Thanks to [Ultralytics](https://github.com/ultralytics) and [SelectStar](https://selectstar.ai/).
+
 ---
 
 <div align="center">
