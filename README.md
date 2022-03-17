@@ -1,6 +1,6 @@
 # Crosswalks and Traffic Lights Detection
 
-Crosswalks and traffic lights detection for people with visual impairment or blindness.
+Crosswalks and traffic lights detection for people with visual impairment and blindness.
 
 ![](data/result.gif)
 
