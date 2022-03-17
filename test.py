@@ -22,7 +22,7 @@ class_names = ['횡단보도', '빨간불', '초록불'] # model.names
 stride = int(model.stride.max())
 colors = ((50, 50, 50), (0, 0, 255), (0, 255, 0)) # (gray, red, green)
 
-cap = cv2.VideoCapture('road.mov')
+cap = cv2.VideoCapture('data/sample.mp4')
 
 while cap.isOpened():
     ret, img = cap.read()
