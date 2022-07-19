@@ -4,6 +4,19 @@ Crosswalks and traffic lights detection for people with visual impairment and bl
 
 ![](data/result.gif)
 
+## 대한민국 교차로 우회전 위반 적발 AI
+
+![](data/result_cross.gif)
+
+### Pretrained models for car and licence plate detection
+
+- https://drive.google.com/file/d/1b3rYgP48z_NGvSuNoMKDvxXzYmray_Qr/view
+- https://github.com/kairess/ANPR-with-Yolov4
+
+```
+python cross.py
+```
+
 ## Run
 
 ```
